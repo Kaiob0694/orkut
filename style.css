@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccd9ea;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 16px 0;
+}
+
+.page {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Caixa principal */
+.main-box {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #b0bfcf;
+}
+
+/* Painel esquerdo */
+.left-panel {
+  flex: 1;
+  padding: 40px 36px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #b0bfcf;
+  gap: 24px;
+}
+
+.logo-area {
+  text-align: center;
+}
+
+/* Placeholder do logo — remova quando inserir a imagem */
+.logo-placeholder {
+  font-size: 52px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #e0559a;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+.logo-placeholder sup {
+  font-size: 14px;
+  color: #aaa;
+  font-style: normal;
+  vertical-align: super;
+}
+
+/* Para quando inserir a imagem real: */
+.logo-area img {
+  max-width: 220px;
+}
+
+.features {
+  list-style: none;
+  text-align: center;
+  line-height: 1.9;
+  color: #555;
+}
+
+.features .highlight {
+  color: #d63a8e;
+  font-weight: bold;
+}
+
+/* Painel direito */
+.right-panel {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #b0bfcf;
+}
+
+/* Caixa de login */
+.login-box {
+  padding: 18px 20px 16px;
+  border-bottom: 1px solid #b0bfcf;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.login-title {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-group label {
+  width: 52px;
+  text-align: right;
+  font-size: 13px;
+  color: #333;
+  flex-shrink: 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  flex: 1;
+  height: 20px;
+  border: 1px solid #aaa;
+  font-size: 12px;
+  padding: 2px 4px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #5a85c0;
+}
+
+.remember {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.remember input[type="checkbox"] {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.remember label {
+  font-size: 12px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.public-warning {
+  font-size: 11px;
+  color: #c0392b;
+  margin-left: 18px;
+}
+
+.public-warning a {
+  color: #c0392b;
+  text-decoration: none;
+}
+
+.btn-login {
+  margin-top: 6px;
+  width: 60px;
+  height: 22px;
+  background: #f0f0f0;
+  border: 1px solid #aaa;
+  font-size: 12px;
+  cursor: pointer;
+  color: #333;
+}
+
+.btn-login:hover {
+  background: #e0e0e0;
+}
+
+.recover-link {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #2255aa;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.recover-link:hover {
+  color: #c0392b;
+}
+
+/* Caixa de cadastro */
+.register-box {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #444;
+  font-size: 13px;
+}
+
+.btn-register {
+  font-size: 13px;
+  font-weight: bold;
+  color: #2255aa;
+  text-decoration: underline;
+}
+
+.btn-register:hover {
+  color: #c0392b;
+}
+
+/* Rodapé */
+footer {
+  background-color: #c5d4e8;
+  border-top: 1px solid #b0bfcf;
+  text-align: center;
+  padding: 8px;
+  font-size: 12px;
+  color: #444;
+}
+
+footer a {
+  color: #2255aa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
